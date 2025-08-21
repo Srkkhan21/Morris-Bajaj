@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+nav{
+    width: 46dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsteelblue;
+}
+#cyNav{
+    width: 46dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 178, 147);
+}
+.containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#cuboidContainer{
+    height: 100dvh;
+    width: 50dvw;
+    background-color: aliceblue;
+}
+#cylindricalContainer{
+    height: 100dvh;
+    width: 50dvw;
+    background-color: antiquewhite;
+}
+h1{
+    font-size: 3em;
+    color: darkblue;
+}
+.redDes{
+    color: red;
+}
+.instruction{
+    font-size: 1.1em;
+    color: darkblue;
+}
+.calcuatorContainer{
+margin-top: 5%;
+}
+.allinputs{
+    color: darkblue;
+    font-size: 1.2em;
+    width: 25dvw;
+    display: flex;
+    flex-direction: column;
+} 
+input{
+    color: darkblue;
+    padding: 2.5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+input::placeholder{
+    color: rgb(190, 190, 255);
+}
+.cubicInput{
+    border: 2px solid rgb(95, 180, 255);
+    outline-color: red;
+}
+.cyInput{
+    border: 2px solid rgb(255, 206, 142);
+    outline-color: red;
+}
+button{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2% 4% 2% 4%;
+    border-radius: 5px;
+    border: 2px solid rgb(70, 167, 252);
+    background-color: aliceblue;
+    outline-color: red;
+    color: darkblue;
+    font-size: 0.9em;
+}
+button:active{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(104, 184, 255);
+    transform: scale(0.95);
+}
+#cyButton{
+    border: 2px solid rgb(255, 160, 36);
+    background-color: antiquewhite;
+}
+#cyButton:active{
+    background-color: rgb(255, 160, 36);
+    transform: scale(0.95);
+}
+.outputCont{
+    font-size: 1.2em;
+    color: darkblue;
+}

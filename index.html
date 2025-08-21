@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight calcuator - Morris Bajaj</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+
+    <!-- For Cuboid -->
+
+    <div id="cuboidContainer" class="containers">
+        <nav>
+            <div id="cuboid">
+                <h1><strong>Cubical <span class="redDes">Rod</span></strong></h1>
+            </div>
+        </nav>
+        <div class="instruction">
+            <p>This calculator is designed to determine the weight of a cubical component. All input dimensions are
+                provided in Milimeters, and the resulting weight is displayed in kilograms.</p>
+        </div>
+
+
+        <main id="cuboidCalculator" class="calcuatorContainer">
+            <div class="allinputs" id="cubicInputContainer">
+                <div id="lengthContainer">
+                    <label for="length">Length:  </label>
+                    <input type="number" id="length" placeholder="Length" class="cubicInput" >
+                </div><br>
+                <div id="widthContainer">
+                    <label for="width">Width:  </label>
+                    <input type="number" id="width" placeholder="Width" class="cubicInput" >
+                </div><br>
+                <div id="heightContainer">
+                    <label for="height">Height:  </label>
+                    <input type="number" id="height" placeholder="Height" class="cubicInput" >
+                </div><br>
+                <div id="pcs">
+                    <label for="numPcs">No. of Pcs.</label>
+                    <input type="number" id="numPcs" value="1" class="cubicInput" >
+                </div>
+            </div><br>
+            <div id="buttonContainer">
+                <button id="button">Calculate</button>
+            </div><br>
+            <div id="outputContainer"  class="outputCont">
+                <span id="weightText">Weight:  </span> <span id="weightOutput"></span>
+            </div>
+        </main>
+    </div>
+
+    <!-- For Cylindrical -->
+    <div id="cylindricalContainer" class="containers">
+        <nav id="cyNav">
+            <div id="cylinder">
+                <h1><strong>Cylinderical <span class="redDes">Rod</span></strong></h1>
+            </div>
+        </nav>
+        <div class="instruction">
+            <p>This calculator is designed to determine the weight of a cylinderical component. All input dimensions are
+                provided in Milimeters, and the resulting weight is displayed in kilograms.</p>
+        </div>
+
+        <main id="cylindericalCalculator" class="calcuatorContainer">
+            <div class="allinputs" id="cyInputContainer">
+                <div id="diaContainer">
+                    <label for="dia">Diameter:  </label>
+                    <input type="number" id="dia" placeholder="Diameter" class="cyInput">
+                </div><br>
+                <div id="cyHeightContainer">
+                    <label for="cyHeight">Height:  </label>
+                    <input type="number" id="cyHeight" placeholder="Height" class="cyInput">
+                </div><br>
+                <div id="cyPcs">
+                    <label for="cyNumPcs">No. of Pcs.</label>
+                    <input type="number" id="cyNumPcs" value="1" class="cyInput">
+                </div>
+            </div><br>
+            <div id="cyButtonContainer">
+                <button id="cyButton">Calculate</button>
+            </div><br>
+            <div id="cyOutputContainer" class="outputCont">
+                <span id="cyWeightText">Weight: </span> <span id="cyWeightOutput"></span>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
