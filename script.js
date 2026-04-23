@@ -12,7 +12,7 @@ const numPcs = document.getElementById('numPcs').value;
 let cuboidVolume = length*width*height;
 let cuboidVolumeInMM = cuboidVolume/1000000000;
 let cuboidWeight = 7850*cuboidVolumeInMM*numPcs;
-cuboidWeight = parseFloat(cuboidWeight.toFixed(3));
+cuboidWeight = parseFloat(cuboidWeight.toFixed(5));
 
 
 
@@ -39,7 +39,7 @@ cyButton.addEventListener('click', function() {
 
     let cyWeight = 3.14*radiusSquareInMM*cyHeightInMM*7850*cyNumPcs;
 
-    cyWeight = parseFloat(cyWeight.toFixed(3));
+    cyWeight = parseFloat(cyWeight.toFixed(5));
 
     cyWeightOutput.innerHTML = cyWeight + " Kg";
 
